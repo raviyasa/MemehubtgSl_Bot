@@ -364,6 +364,7 @@ async def giblog(bot, message):
     await bot.send_document(
         message.chat.id, "logs.txt", caption=f"**Logs Of {HEROKU_APP_NAME}**"
     )
+    os.remove("logs.txt")
 
 
 @Client.on_message(filters.command("restart"))
