@@ -462,18 +462,18 @@ async def status(bot, message):
     if message.from_user.id not in AUTH_USERS:
         await message.delete()
         return
-    msg=message.reply_to_message
+    mesg=message.reply_to_message
     f= message.text
     s=f.replace('/send ' ,'')
     fid=s.replace('%20', ' ')
-    await send_msg(user_id=fid, message=msg)
+    await send_msg(user_id=fid, message=mesg)
     await message.delete()
     await bot.send_message(message.chat.id, text=f"Ur Msg Sent To [User](tg://user?id={fid})", reply_markup=CLOSE_BUTTON)
     await bot.send_message(PRIVATE_LOG,text=f"""#SEND_LOG
 
 • **Send By:** {message.from_user.mention} [`{message.from_user.id}`]
 • **Send To:** [User](tg://user?id={fid}) [`{fid}`]
-• **Message:** {msg}
+• **Message:** {mesg}
 """)
 
 @Client.on_message(filters.private &filters.command("admincast"))
