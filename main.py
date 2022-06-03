@@ -213,6 +213,7 @@ async def on_off_antiarab(bot, message):
 
 {UPDT_NT}
 
+By : {message.from_user.mention}
     """
     await bot.send_photo(message.chat.id,photo=photo, caption=caption, reply_markup=InlineKeyboardMarkup([[              
                  InlineKeyboardButton('♻️ Updatate ♻️', callback_data="upd")
@@ -243,6 +244,8 @@ async def on_off_antiarab(bot, message):
 ◇─────Update Note─────◇
         
 {UPDATE_N}
+
+By : {message.from_user.mention}
     """
     await message.reply_text(text=text, reply_markup=InlineKeyboardMarkup([[              
                  InlineKeyboardButton('♻️ Updatate ♻️', callback_data="upd")
@@ -280,6 +283,13 @@ async def ban(c, m):
             ban_log_text += (
                 f"\n\n ⚠️ User notification failed! ⚠️ \n\n`{traceback.format_exc()}`"
             )
+            await c.send_message(PRIVATE_LOG,text=f"""#BAN_LOG
+
+• **Of:** {m.from_user.mention} [`{m.from_user.id}`]
+• **To:** [User](tg://user?id={user_id}) [`{user_id}`]
+• **Reason:** {ban_reason}
+• **Duration:** {ban_duration} day(s)
+""")
         await db.ban_user(user_id, ban_duration, ban_reason)
         print(ban_log_text)
         await m.reply_text(ban_log_text, quote=True)
@@ -305,6 +315,11 @@ async def unban(c, m):
     try:
         user_id = int(m.command[1])
         unban_log_text = f"Unbanning user 🤪 {user_id}"
+        await c.send_message(PRIVATE_LOG,text=f"""#UNBAN_LOG
+
+• **Of:** {m.from_user.mention} [`{m.from_user.id}`]
+• **To:** [User](tg://user?id={user_id}) [`{user_id}`]
+""")
 
         try:
             await c.send_message(user_id, f"Your ban was lifted!")
@@ -450,6 +465,12 @@ async def status(bot, message):
     await send_msg(user_id=fid, message=msg)
     await message.delete()
     await bot.send_message(message.chat.id, text=f"Ur Msg Sent To [User](tg://user?id={fid})", reply_markup=CLOSE_BUTTON)
+    await bot.send_message(PRIVATE_LOG,text=f"""#BROADCAST_LOG
+
+• **Send By:** {message.from_user.mention} [`{message.from_user.id}`]
+• **Send To:** [User](tg://user?id={fid}) [`{fid}`]
+• **Message:** {msg}
+""")
 
 @Client.on_message(filters.private &filters.command("admincast"))
 async def status(bot, message):
@@ -464,6 +485,10 @@ async def status(bot, message):
     await send_msg(user_id=1120271521, message=msg)
     await send_msg(user_id=1235760387, message=msg)
     await send_msg(user_id=LOG_CHANNEL, message=msg)
+    await bot.send_message(PRIVATE_LOG,text=f"""GADMINCAST_LOG
+
+• **Of:** {message.from_user.mention} [`{message.from_user.id}`]
+""")
         
 @Client.on_message(filters.command(["help", "help@MemeHubTgSl_Bot"]))
 async def help(bot, message):
@@ -546,9 +571,16 @@ async def broadcast(bot, update, broadcast_ids={}):
 
     if failed == 0:
         await update.reply_text(text=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.", quote=True)
+        await bot.send_message(PRIVATE_LOG,text=f"""#BROADCAST_LOG
+
+• **Of:** {update.from_user.mention} [`{update.from_user.id}`]
+""")
     else:
         await update.reply_document(document='broadcast.txt', caption=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.")
-        
+        await bot.send_message(PRIVATE_LOG,text=f"""#BROADCAST_LOG
+
+• **Of:** {update.from_user.mention} [`{update.from_user.id}`]
+""")
     os.remove('broadcast.txt') 
 
                        
@@ -789,6 +821,12 @@ async def tgm(bot, update):
         await update.message.delete()
         rid=update.message.caption.split()[2]
         await bot.send_message(rid, text=f"☠️ **Ur Message Rejected By {update.from_user.mention}** ☠️")
+        c_id = str(LOG_CHANNEL)[4:]
+        await bot.send_message(PRIVATE_LOG,text=f"""#REJECT_LOG
+
+• **Of:** {update.from_user.mention} [`{update.from_user.id}`]
+• **Post:** https://t.me/c/{c_id}/{update.message.id}
+""")
     elif update.data == "upd":
         await update.message.edit_text("Updating....")
         await update.answer(
@@ -845,6 +883,11 @@ async def tgm(bot, update):
         await update.answer(
              text="✅ᴍᴇssᴀɢᴇ ᴀᴄᴄᴇᴘᴛᴇᴅ",
         )
+        await bot.send_message(PRIVATE_LOG,text=f"""#APPROVE_LOG
+
+• **Of:** {update.from_user.mention} [`{update.from_user.id}`]
+• **Post:** https://t.me/{force_subchannel}/{msg_id}
+""")
 #--------------------------------------------------Inline------------------------------------------------#
 
 @Client.on_inline_query()
