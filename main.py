@@ -775,10 +775,10 @@ async def tgm(bot, update):
         if await forcesub(bot, update):
             return
         file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
-        await client.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
-        text = f"Hi {message.from_user.mention}, Welcome to  MemeHub Telegram 🇱🇰 Official Bot"
+        await client.send_sticker(update.chat.id, file_id, reply_markup=start_menu)
+        text = f"Hi {update.from_user.mention}, Welcome to  MemeHub Telegram 🇱🇰 Official Bot"
         reply_markup = START_BUTTON  
-        await message.reply_text(
+        await update.reply_text(
         text=text,
         reply_markup=reply_markup,
         disable_web_page_preview=True,
