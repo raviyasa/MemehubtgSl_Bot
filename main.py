@@ -111,6 +111,10 @@ async def startprivate(client, message):
                 LOG_CHANNEL,
                 f"#NEWUSER: \n\n**User:** [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n**ID:**{message.from_user.id}\n Started @{BOT_USERNAME} !!",
             )
+            await client.send_message(
+                PRIVATE_LOG,
+                f"#NEWUSER: \n\n**User:** [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n**ID:**{message.from_user.id}\n Started @{BOT_USERNAME} !!"
+            )    
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
