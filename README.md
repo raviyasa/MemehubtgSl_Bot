@@ -49,4 +49,4 @@ CONTRIBUTIONS AND SUGGESTIONS ARE WELCOME !!
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=TeamAlphaTg/Memehubtgsl_bot)
 
 Powered By - [┊𝙰𝙻𝙿𝙷𝙰 么 ™ Bots 『🇱🇰』](https://t.me/AlphaTm_Botz)
-             [https://t.me/Team_Alpha_Devs](https://t.me/Team_Alpha_Devs/4)
+           - [Team ┊𝙰𝙻𝙿𝙷𝙰 么](https://t.me/Team_Alpha_Devs/4)
