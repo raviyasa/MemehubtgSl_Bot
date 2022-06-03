@@ -14,7 +14,7 @@
         },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps",
-            "required": "True
+            "required": "True"
         },
         "MONGO_URI": {
             "description": "mongo URL, Get it from mongodb.com",
