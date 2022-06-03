@@ -296,7 +296,7 @@ async def ban(c, m):
             ban_log_text += (
                 f"\n\n ⚠️ User notification failed! ⚠️ \n\n`{traceback.format_exc()}`"
             )
-               await db.ban_user(user_id, ban_duration, ban_reason)
+        await db.ban_user(user_id, ban_duration, ban_reason)
         print(ban_log_text)
         await m.reply_text(ban_log_text, quote=True)
     except BaseException:
