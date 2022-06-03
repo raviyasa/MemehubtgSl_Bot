@@ -31,6 +31,7 @@ CONTRIBUTIONS AND SUGGESTIONS ARE WELCOME !!
 
 * ### Support
    - [@TR TECH GUIDE](https://t.me/trtechguide)
+   - [┊𝙰𝙻𝙿𝙷𝙰 Botz Chat](https://t.me/AlphaTm_Botz_chat)
 
 * ### Thanks to
    - Dan for [Pyrogram](https://github.com/Pyrogram)
