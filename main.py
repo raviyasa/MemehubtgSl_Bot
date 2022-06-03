@@ -772,7 +772,7 @@ async def tgm(bot, update):
     elif update.data == "ref": 
         await update.answer("♻️Reloading.....♻️",) 
         await update.message.delete()
-        if await helper.fsub.forcesub(bot,update):
+        if await forcesub(bot, update):
             return
         file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
         await client.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
