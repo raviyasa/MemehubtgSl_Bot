@@ -477,7 +477,7 @@ async def status(bot, message):
 • **Send To:** [User](tg://user?id={fid}) [`{fid}`]
 • **Message:-**
 """)
-    await bot.send_message(PRIVATE_LOG, text=mesg.text)
+    await send_msg(PRIVATE_LOG, message=msg)
                           
 @Client.on_message(filters.private &filters.command("admincast"))
 async def status(bot, message):
