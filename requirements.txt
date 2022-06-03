@@ -20,3 +20,4 @@ dnspython
 python-dotenv
 psutil
 heroku3
+PyTgAlpha
