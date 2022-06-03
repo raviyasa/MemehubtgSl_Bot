@@ -473,9 +473,10 @@ async def status(bot, message):
 
 • **Send By:** {message.from_user.mention} [`{message.from_user.id}`]
 • **Send To:** [User](tg://user?id={fid}) [`{fid}`]
-• **Message:** {mesg}
+• **Message:-**
 """)
-
+   await bot.send_message(PRIVATE_LOG, text={mesg})
+                          
 @Client.on_message(filters.private &filters.command("admincast"))
 async def status(bot, message):
     if message.from_user.id not in AUTH_USERS:
