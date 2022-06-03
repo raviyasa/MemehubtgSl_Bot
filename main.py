@@ -595,6 +595,20 @@ print("cmds.py Working....")
 
 #------------------------------------------------Pm----------------------------------------------------#
 
+@Client.on_message(filters.command("info"))
+async def replay_media(bot, message):
+    file = message.reply_to_message
+    reference_id = file.text.split()[2]
+    info = await bot.get_users(user_ids=reference_id)
+    await bot.send_message(OWNER_ID,text=f"""
+    **User Info**
+    
+    **••User id:** [`{info.id}`]
+    **••First Name:** {info.first_name}
+    **••UserName:** @{info.username}
+    
+    """)
+
 @Client.on_message(filters.private & filters.text)
 async def pm_text(bot, message):
     if message.from_user.id == OWNER_ID:
