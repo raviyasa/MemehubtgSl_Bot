@@ -776,14 +776,9 @@ async def tgm(bot, update):
             return
         file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
         await bot.send_sticker(update.from_user.id, file_id, reply_markup=start_menu)
-        text = f"Hi {update.from_user.mention}, Welcome to  MemeHub Telegram 🇱🇰 Official Bot"
-        reply_markup = START_BUTTON  
-        await update.reply_text(
-        text=text,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True,
-        quote=True
-    )
+        TEXT = f"Hi {update.from_user.mention}, Welcome to  MemeHub Telegram 🇱🇰 Official Bot"
+        RMB = START_BUTTON  
+        await update.send_message(update.from_user.id, TEXT, reply_markup=reply_markup, disable_web_page_preview=True, quote=True)
         
     elif update.data == "cloc":
         if update.from_user.id not in AUTH_USERS:
