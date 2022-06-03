@@ -98,7 +98,7 @@ db = Database(DATABASE_URL, "Memehub_bot")
 
 @Client.on_message(filters.command("start"))
 async def startprivate(client, message):
-    if await forcesub( bot,update):
+    if await forcesub(client, message):
        return
     #return
     chat_id = message.from_user.id
@@ -466,7 +466,7 @@ async def status(bot, message):
         
 @Client.on_message(filters.command(["help", "help@MemeHubTgSl_Bot"]))
 async def help(bot, message):
-    if await forcesub( bot,update):
+    if await forcesub(bot, message):
        return
     await bot.send_sticker(message.chat.id, random.choice(HELP_STICKER), reply_markup=start_menu)
     await message.reply_text(
@@ -560,7 +560,7 @@ async def pm_text(bot, message):
     if message.from_user.id == OWNER_ID:
         await reply_text(bot, message)
         return
-    if await forcesub( bot,update):
+    if await forcesub(bot, message):
        return
     info = await bot.get_users(user_ids=message.from_user.id)
     reference_id = int(message.chat.id)
@@ -579,7 +579,7 @@ async def pm_sticker(bot, message):
     if message.from_user.id == OWNER_ID:
         await replay_media(bot, message)
         return
-    if await forcesub( bot,update):
+    if await forcesub(bot, message):
        return
     info = await bot.get_users(user_ids=message.from_user.id)
     reference_id = int(message.chat.id)
@@ -601,7 +601,7 @@ async def pm_media(bot, message):
     if message.from_user.id == OWNER_ID:
         await replay_media(bot, message)
         return
-    if await forcesub( bot,update):
+    if await forcesub(bot, message):
        return
     await message.reply_text(text=f"Ur Photo Sent To @{force_subchannel} Admins", reply_markup=CLOSE_BUTTON)
     info = await bot.get_users(user_ids=message.from_user.id)
