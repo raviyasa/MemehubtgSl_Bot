@@ -1,6 +1,6 @@
 # Memehub Bot
 <p align="center">
-<img src="https://telegra.ph/file/1f81144ccfbd9d5e8ee0b.png" width="520", height="520"></p>
+<img src="https://telegra.ph/file/81f1836037d836bf6cfcb.jpg" width="520", height="520"></p>
 
 
 # DEPLOY TO HEROKU
