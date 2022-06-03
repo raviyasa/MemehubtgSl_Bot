@@ -37,7 +37,7 @@ Hi {}, Welcome to  MemeHub Telegram 🇱🇰 Official Bot.
 
 #Inline Btn
 FORCESUB_BUTTONS = InlineKeyboardMarkup([[
-                 InlineKeyboardButton('Join Here - MemeHub Telegram 🇱🇰', url=f"https://t.me/+78jdOfCNSdFhMDM1")
+                 InlineKeyboardButton('Join Here - MemeHub Telegram 🇱🇰', url=f"https://t.me/{force_subchannel}")
                  ],
                  [
                  InlineKeyboardButton('🐞 ʀᴘᴏʀᴛ ʙᴜɢs 🐞', user_id=f"@Imgishan")
