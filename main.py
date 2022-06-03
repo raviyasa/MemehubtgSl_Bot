@@ -281,12 +281,8 @@ async def ban(c, m):
                 user_id,
                 f"You are Banned 🚫 to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n**Message from the admin 🤠**",
             )
+            
             ban_log_text += "\n\nUser notified successfully!"
-        except BaseException:
-            traceback.print_exc()
-            ban_log_text += (
-                f"\n\n ⚠️ User notification failed! ⚠️ \n\n`{traceback.format_exc()}`"
-            )
             await c.send_message(PRIVATE_LOG,text=f"""#BAN_LOG
 
 • **Of:** {m.from_user.mention} [`{m.from_user.id}`]
@@ -294,7 +290,13 @@ async def ban(c, m):
 • **Reason:** {ban_reason}
 • **Duration:** {ban_duration} day(s)
 """)
-        await db.ban_user(user_id, ban_duration, ban_reason)
+     
+        except BaseException:
+            traceback.print_exc()
+            ban_log_text += (
+                f"\n\n ⚠️ User notification failed! ⚠️ \n\n`{traceback.format_exc()}`"
+            )
+               await db.ban_user(user_id, ban_duration, ban_reason)
         print(ban_log_text)
         await m.reply_text(ban_log_text, quote=True)
     except BaseException:
