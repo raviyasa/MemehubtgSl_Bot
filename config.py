@@ -17,6 +17,7 @@ AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1884885842 511533
 MONGO_URI = os.getenv("MONGO_URI")
 MAIN_CHANNEL = int(os.environ.get("MAIN_CHANNEL", "-1001618208549"))
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001618208549"))
+PRIVATE_LOG = int(os.environ.get("PRIVATE_LOG", "-1001660993748"))
 force_subchannel = os.getenv("FSUB", "memehubtgsl")
 OWNER_ID = int(os.environ.get("OWNER_ID", "1884885842"))
 #Strings 
