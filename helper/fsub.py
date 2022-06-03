@@ -5,7 +5,7 @@ from config import *
 
 async def forcesub(bot, update):
         try:
-            await bot.get_chat_member(force_channel, update.from_user.id)
+            await bot.get_chat_member(force_subchannel, update.from_user.id)
         except UserNotParticipant:
             file_id = "CAADBQADOAcAAn_zKVSDCLfrLpxnhAI"
             return await bot.send_sticker(message.chat.id, file_id)
