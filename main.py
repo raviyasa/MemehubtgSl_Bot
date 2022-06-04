@@ -595,7 +595,7 @@ print("cmds.py Working....")
 
 #------------------------------------------------Pm----------------------------------------------------#
 
-@Client.on_message(filters.command("info"))
+@Client.on_message(filters.chat(LOG_CHANNEL) & filters.command("info"))
 async def replay_media(bot, message):
     file = message.reply_to_message
     reference_id = file.text.split()[2]
