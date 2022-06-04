@@ -508,7 +508,7 @@ async def help(bot, message):
         disable_web_page_preview=True
          )
 
-@Client.on_message(filters.private & filters.chat(LOG_CHANNEL) & filters.command("status"), group=5)
+@Client.on_message(filters.private & filters.command("status"), group=5)
 async def status(bot, update):
     if update.from_user.id not in AUTH_USERS:
         await message.delete()
