@@ -600,7 +600,7 @@ async def replay_media(bot, message):
     file = message.reply_to_message
     reference_id = file.text.split()[2]
     info = await bot.get_users(user_ids=reference_id)
-    await bot.send_message(message.chat.id, text=f"""
+    await bot.send_message(message.from_user.id, text=f"""
     **User Info**
     
     **••User id:** [`{info.id}`]
