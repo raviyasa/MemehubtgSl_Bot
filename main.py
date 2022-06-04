@@ -794,7 +794,7 @@ print("Pm Working....")
 @Client.on_message(filters.command("genlink"))
 async def reply_text(bot, message):
     link = await bot.create_chat_invite_link(message.chat.id, name=message.from_user.username)
-    await bot.send_message(message.chat.id, text=f"**Link Generated, request by {message.from_user.mention}\n\n**Link:** {link.invite_link}\n**Generated Date And Time:** {link.date}")
+    await message.reply_text(text=f"**Link Generated, request by {message.from_user.mention}\n\n**Link:** {link.invite_link}\n**Generated Date And Time:** `{link.date}`")
 
 #------------------------------------------------Callback-------------------------------------------#
 @Client.on_callback_query()  
