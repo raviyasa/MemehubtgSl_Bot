@@ -67,6 +67,10 @@ START_BUTTON = InlineKeyboardMarkup([[
                  [
                  InlineKeyboardButton("➕ sʜᴀʀᴇ ➕", switch_inline_query="share"),
                  InlineKeyboardButton("➕ sʜᴀʀᴇ ᴄʜɴʟ ➕", switch_inline_query="cshare")
+                 ],
+                 [
+                 InlineKeyboardButton("┊𝙰𝙻𝙿𝙷𝙰 么 ™ Bots 『🇱🇰』", url="https://t.me/AlphaTm_Botz"),
+                 InlineKeyboardButton("Support - ┊𝙰𝙻𝙿𝙷𝙰 Botz Chat ", url="https://t.me/AlphaTm_Botz_chat")
                  ]]
                   )
 
