@@ -1056,3 +1056,4 @@ async def log():
 
 print(" Deployed Successfully !")        
 Client.run(log())
+idle()
