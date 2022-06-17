@@ -1052,7 +1052,7 @@ Support: @AlphaTm_Botz_chat
 
 async def log():
     if LOG_CHANNEL:
-       await bot.send_message(LOG_CHANNEL, text=a)
+       await Client.send_message(LOG_CHANNEL, text=a)
 
 print(" Deployed Successfully !")        
 Client.run(log())
