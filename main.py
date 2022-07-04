@@ -119,7 +119,7 @@ async def startprivate(client, message):
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
     await client.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
-    text = f"Hi {} 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ} Assistant Bot. You Can Contact [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ}](https://t.me/Mr_Saathan_Official) By me🥲.\n Bot By [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ}](https://t.me/Mr_Saathan_Official)"  
+    text = f"Hi {} 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ} Assistant Bot. You Can Contact [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ}](https://t.me/Mr_Saathan_Official) By me🥲.\nBot By [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ}](https://t.me/Mr_Saathan_Official)"  
     reply_markup = START_BUTTON  
     await message.reply_text(
         text=text,
