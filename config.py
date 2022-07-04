@@ -28,10 +28,10 @@ PM_TXT_ATTS = "<b>Message from:</b> {}\n<b>Name:</b> {}"
 PM_MED_ATT = "<b>Message from:</b> {} \n<b>Name:</b> {}\n<b>Caption</b>:{}"
 USER_DETAILS = "<b>FROM:</b>\nName: {} {}\nId: {}\nUname: @{}\nScam: {}\nRestricted: {}\nStatus: {}\nDc Id: {}"
 FORCESUB_TEXT = "**❌ Access Denied ❌**\n\nMemehub eke nathuva Mokatada yako Botva Start Kare kkk😒😒\n♻️Join and Try Again.♻️"
-HELP_STRING = "Meme Tiye nam dapam Mekata😒😂. Adminlata Msg Daanna One Nam ekat Mekata dapam 😒😂"
+HELP_STRING = "If there any problem Please ask😒😂. Admins will reply soon as possible 🥺😒"
 START_STRING ="""
-Hi {}, Welcome to  MemeHub Telegram 🇱🇰 Official Bot.
- Bot By [◤ᴵᴬᴹǤΐรhaή ᴷʳⁱˢʰᵏᵃ◢ 『🇱🇰』](https://t.me/Imgishan)
+Hi {} 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ} Assistant Bot. You Can Contact [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ}](https://t.me/Mr_Saathan_Official) By me🥲.  
+ Bot By [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ}](https://t.me/Mr_Saathan_Official)
 """
 
 
