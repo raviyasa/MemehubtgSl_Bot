@@ -117,7 +117,7 @@ async def startprivate(client, message):
             )    
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
-    file_id = "CAACAgUAAxkBAAED9kZiDq_LFrib38c7DYu3jNz3ebsolgACJAUAAuTb4FdKtjtZGQ2ukiME"
+    file_id = "CAACAgUAAxkBAAED9kRiDq_GkOHuRHPeVv4IRhsvy4NtbwACqQQAAncUyFftN80YUiyXnyME"
     await client.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
     text = f"Hi {message.from_user.mention}, 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> Assistant Bot. You Can Contact [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>](https://t.me/Mr_Saathan_Official) By me🥲.\n\nBot By [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>](https://t.me/Mr_Saathan_Official)"  
     reply_markup = START_BUTTON  
@@ -876,9 +876,9 @@ async def tgm(bot, update):
         await update.message.delete()
         if await forcesub(bot, update):
             return
-        file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
+        file_id = "CAACAgUAAxkBAAED9kRiDq_GkOHuRHPeVv4IRhsvy4NtbwACqQQAAncUyFftN80YUiyXnyME"
         await bot.send_sticker(update.from_user.id, file_id, reply_markup=start_menu)
-        TEXT = f"Hi {update.from_user.mention}, Welcome to  MemeHub Telegram 🇱🇰 Official Bot"
+        TEXT = f"Hi {message.from_user.mention}, 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> Assistant Bot. You Can Contact [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>](https://t.me/Mr_Saathan_Official) By me🥲.\n\nBot By [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>](https://t.me/Mr_Saathan_Official)"
         RMB = START_BUTTON  
         await bot.send_message(update.from_user.id, TEXT, reply_markup=RMB, disable_web_page_preview=True, quote=True)
         
