@@ -215,7 +215,7 @@ DEV_BTN = InlineKeyboardMarkup([[
 
 #Rndm Stkr
 
-OWNER_STICKER = ["CAADAgADtA8AAhUWiEuTU2os6PSW-AI",
+OWNER_STICKER = ["CAACAgUAAxkBAAEVrXFiw6QK-k8JYmoIWmyD1h7loqJsOAACqQMAAlIC6VdaH9GhxT6y2ykE",
                 "CAADAgADCwMAAm2wQgN_tBzazKZEJQI",
                 "CAADAgADtwEAAladvQr3FVtdLiA1jgI", 
                 "CAADBQADSwQAAnxrOFaYSIaXhBE_YAI"              
@@ -238,7 +238,7 @@ DEV_STICKER = ["CAADAgADaRsAAsOUWUpHrmf5mZp3EgI",
                 "CAADAgADFwADlp-MDlZMBDUhRlElAg"                
          ] 
 
-HELP_STICKER = ["CAADAgADYgADWbv8JXMOJcSM3-2OAg",
+HELP_STICKER = ["CAACAgUAAxkBAAEVrW9iw6PzIQABI2Vs8DIQwUTKKPq5A4QAAjwDAALElQABV-a9RYWg8pixKQQ",
                 "CAADAgADzwEAAhZCawpc3d8UgDDcaQI",
                 "CAADAgAD9AIAAvPjvgtVDXi3hHimOQI", 
                 "CAADAgADiQEAAiteUwt812TG6sLw9AI"               
