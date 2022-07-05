@@ -37,7 +37,7 @@ Hi {} 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>
 
 #Inline Btn
 FORCESUB_BUTTONS = InlineKeyboardMarkup([[
-                 InlineKeyboardButton('Join Here - MemeHub Telegram 🇱🇰', url=f"https://t.me/{force_subchannel}")
+                 InlineKeyboardButton('Join Here - Bᴏᴛ Sʜᴀᴅᴏᴡ ♾', url=f"https://t.me/{force_subchannel}")
                  ],
                  [
                  InlineKeyboardButton('🐞 ʀᴘᴏʀᴛ ʙᴜɢs 🐞', user_id=f"@Imgishan")
@@ -58,7 +58,7 @@ BACK_BUTTONS = InlineKeyboardMarkup([[
                   ) 
 
 START_BUTTON = InlineKeyboardMarkup([[              
-                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@N_Abeysinghe_2001")
+                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@Mr_Saathan_Official")
                  ],
                  [
                  InlineKeyboardButton(text="🌴 ʜᴇʟᴘ 🌴",callback_data="hlp"),
@@ -69,8 +69,8 @@ START_BUTTON = InlineKeyboardMarkup([[
                  InlineKeyboardButton("➕ sʜᴀʀᴇ ᴄʜɴʟ ➕", switch_inline_query="cshare")
                  ],
                  [
-                 InlineKeyboardButton("┊𝙰𝙻𝙿𝙷𝙰 么 ™ Bots 『🇱🇰』", url="https://t.me/AlphaTm_Botz"),
-                 InlineKeyboardButton("Support - ┊𝙰𝙻𝙿𝙷𝙰 Botz Chat ", url="https://t.me/AlphaTm_Botz_chat")
+                 InlineKeyboardButton("Bᴏᴛ Sʜᴀᴅᴏᴡ ♾", url="https://t.me/media_bot_updates"),
+                 InlineKeyboardButton("Support - Bᴏᴛ Sʜᴀᴅᴏᴡ ♾ Cʜᴀᴛ ", url="https://t.me/media_bot_chat")
                  ]]
                   )
 
@@ -191,7 +191,7 @@ ADMIN_BTN = InlineKeyboardMarkup([[
                   )
 
 OWNER_BTN = InlineKeyboardMarkup([[              
-                 InlineKeyboardButton('Nirmal Abeysinghe', user_id="N_Abeysinghe_2001")
+                 InlineKeyboardButton('<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> {Oғғʟɪɴᴇ} ♰ #GoHomeGota2022', user_id="Mr_Saathan_Official")
                  ]]
                   )               
 
