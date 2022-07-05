@@ -66,7 +66,7 @@ heroku_api = "https://api.heroku.com"
 start_menu = ReplyKeyboardMarkup(
       [
             ["🤴 OWNER 🤴"],
-            ["💻 Bot Devs 💻", "👮‍♂️ MemeHub Admins 👮‍♂️"],
+            ["💻 Bot Devs 💻", "👮‍♂️ My Admins 👮‍♂️"],
             ["📊 Statistics"]
            
         ],
@@ -85,7 +85,7 @@ next_1 = ReplyKeyboardMarkup(
 back = ReplyKeyboardMarkup(
       [
             ["🤴 OWNER 🤴"],
-            ["💻 Bot Devs 💻", "👮‍♂️ MemeHub Admins 👮‍♂️"],
+            ["💻 Bot Devs 💻", "👮‍♂️ My Admins 👮‍♂️"],
             ["📊 Statistics"]
            
         ],
@@ -119,7 +119,7 @@ async def startprivate(client, message):
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
     await client.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
-    text = f"Hi {message.from_user.mention}, 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> Assistant Bot. You Can Contact [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>](https://t.me/Mr_Saathan_Official) By me🥲."  
+    text = f"Hi {message.from_user.mention}, 👋, Welcome to  <> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </> Assistant Bot. You Can Contact [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>](https://t.me/Mr_Saathan_Official) By me🥲.\n\nBot By [<> ᴍͥʀ.ᷧ ⷨසා̥̏ත̆̈න්̅ 🇱🇰 </>](https://t.me/Mr_Saathan_Official)"  
     reply_markup = START_BUTTON  
     await message.reply_text(
         text=text,
