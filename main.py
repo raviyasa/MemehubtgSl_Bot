@@ -204,8 +204,8 @@ async def startprivate(bot, message):
     cpu_len = len(psutil.Process().cpu_affinity())
     countb = await db.total_users_count()
     countb = await db.total_users_count()
-    count = await bot.get_chat_members_count(-1001210985373)
-    counta = await bot.get_chat_members_count(-1001759991131)
+    count = await bot.get_chat_members_count(-1001625816444)
+    counta = await bot.get_chat_members_count(-1001219780999)
     text=f"""**Bot Advanced Statistics 📊**
 ** 👥Members Counts in Our channel:**
 
